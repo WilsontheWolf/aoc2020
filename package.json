@@ -1,0 +1,12 @@
+{
+  "name": "aoc2020",
+  "version": "1.0.0",
+  "description": "My solutions to Advent of Code 2020!",
+  "main": "index.js",
+  "repository": "https://github.com/WilsontheWolf/aoc2020",
+  "author": "WilsontheWolf",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
