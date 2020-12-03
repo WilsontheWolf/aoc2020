@@ -7,14 +7,14 @@ module.exports = async () => {
 
     let result = 0;
     input.forEach(i => {
-        let match = i.match(/(\d+)-(\d+) (\w): (\w+)/)
+        let match = i.match(/(\d+)-(\d+) (\w): (\w+)/);
         if (!match) return console.error(`Input ${i} not valid!`);
         const [, o, t, l, p] = match;
         const finds = [p[o - 1], p[t - 1]];
         if (finds[0] === l && finds[1] !== l)
-        result++
+            result++;
         if (finds[0] !== l && finds[1] === l)
-            result++
+            result++;
     });
     console.log(`${result} passwords are valid.`);
 };

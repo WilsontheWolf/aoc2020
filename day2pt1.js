@@ -7,12 +7,12 @@ module.exports = async () => {
 
     let result = 0;
     input.forEach(i => {
-        let match = i.match(/(\d+)-(\d+) (\w): (\w+)/)
+        let match = i.match(/(\d+)-(\d+) (\w): (\w+)/);
         if (!match) return console.error(`Input ${i} not valid!`);
         const [, o, t, l, p] = match;
         let finds = p.match(new RegExp(l, 'g'));
         if (!finds) return;
-        if (finds.length >= o && finds.length <= t) result++
+        if (finds.length >= o && finds.length <= t) result++;
     });
     console.log(`${result} passwords are valid.`);
 };
