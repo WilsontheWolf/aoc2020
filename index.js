@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const days = 3;
+const days = 4;
 
 const choices = [];
 for (let i = 1; i < days + 1; i++) {
