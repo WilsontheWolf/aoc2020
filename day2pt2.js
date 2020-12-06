@@ -2,7 +2,7 @@ const { getInput } = require('./helper');
 
 module.exports = async () => {
     let input = await getInput(2);
-    if (!input) return console.error('There was an issue getting the input. Please ensure you have a file called input1.txt');
+    if (!input) return console.error('There was an issue getting the input. Please ensure you have a file called input2.txt');
     input = input.split('\n');
 
     let result = 0;
